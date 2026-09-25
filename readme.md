@@ -10,7 +10,7 @@ Repositorio de documentación técnica y configuración del laboratorio práctic
 - **Matrícula:** 2025-0689
 - **Carrera:** Seguridad Informática
 - **Fecha:** 25 de Septiembre 2026
-- **Entorno de Simulación:** PNETLab / EVE-NG
+- **Entorno de Simulación:** PNETLab
 
 ---
 
