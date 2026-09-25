@@ -160,3 +160,11 @@ En las evaluaciones de seguridad de redes sobre plataformas virtualizadas (EVE-N
 1. **Aislamiento y Mínimo Privilegio:** Se implementó una segmentación estricta entre la red de usuarios y servidores. El acceso hacia la base de datos se encuentra totalmente restringido para clientes y acotado de forma exclusiva al puerto MySQL (`3306`) desde el servidor web.
 2. **Defensa en Profundidad:** La combinación de Hardening en Capa 2 (mitigación de Rogue DHCP, Port Security y BPDU Guard) junto con Políticas DoS a nivel de Kernel en el FortiGate proporciona una defensa sólida frente a ataques de suplantación, saturación de tablas y denegación de servicio.
 3. **Validación Arquitectónica:** A pesar de las restricciones operativas que impone la falta de licenciamiento comercial de FortiGuard en entornos de laboratorio virtualizados, el diseño de seguridad, las políticas perimetrales, el enrutamiento y la contención de amenazas de capa de aplicación fueron implementados, validados y justificados técnicamente bajo los estándares de la disciplina.
+
+## 8. DECLARACIÓN DE USO DE INTELIGENCIA ARTIFICIAL
+Durante la elaboración de este proyecto se utilizó el modelo de lenguaje Google Gemini como herramienta de asistencia técnica para la verificación de cálculos de direccionamiento VLSM, la optimización de scripts de hardening y la estructuración formal del informe técnico. Todo el diseño de la topología en el entorno virtualizado EVE-NG, el despliegue de las máquinas virtuales, la configuración de políticas e inspección UTM en la interfaz gráfica de FortiOS, el aseguramiento de puertos en conmutadores Cisco, así como la ejecución y validación de las pruebas de conectividad y mitigación de ciberataques, fueron implementados, analizados y verificados en su totalidad por el autor.
+
+Referencia bibliográfica (Formato APA 7):
+
+Google. (2026). Gemini (Versión actual) [Modelo de lenguaje grande]. https://gemini.google.com
+
