@@ -10,7 +10,7 @@ Repositorio de documentación técnica y configuración del laboratorio práctic
 - **Matrícula:** 2025-0689
 - **Carrera:** Seguridad Informática
 - **Fecha:** 25 de Septiembre 2026
-- **Entorno de Simulación:** PNETLab / EVE-NG
+- **Entorno de Simulación:** PNETLab 
 
 ---
 
@@ -24,39 +24,13 @@ Diseñar, implementar y auditar una infraestructura de red convergente y segura 
 - **Seguridad en Capa de Acceso (L2):** Aplicar controles de mitigación contra vectores comunes en redes locales (saturación de tablas CAM/MAC Flooding, Rogue DHCP, manipulación de STP y accesos no autorizados).
 - **Control de Flujo Perimetral:** Implementar políticas de filtrado estrictas en FortiOS para garantizar el acceso web por canales seguros (HTTPS/443), bloquear accesos no privilegiados a bases de datos (3306) y aislar el backend de base de datos.
 - **Mitigación y Análisis UTM:** Configurar y evaluar el comportamiento de los motores de seguridad en capa de aplicación (Rate Limiting de DoS, Inspección Profunda SSL/TLS, Detección de Inyección SQL y Filtrado de Binarios), documentando las capacidades operativas y las limitaciones inherentes a plataformas virtualizadas sin suscripciones comerciales a la nube (FortiGuard).
-- **Gestión de Entregables:** Centralizar los scripts de automatización, artefactos de configuración (*running-config*) y evidencias visuales en un repositorio de control de versiones institucional.
 
 ---
 
 ## 2. Topología de Red y Esquema VLSM
 
 ### 2.1 Diagrama de Conectividad
-
-```text
-                     [ Internet / Net ]
-                             │
-                          (port1)
-                     ┌───────────────┐
-                     │   Fortinet    │
-                     │   FortiGate   │
-                     └───────────────┘
-                          (port2)
-                             │
-                          (Gi0/0)
-                     ┌───────────────┐
-                     │ Cisco Switch  │
-                     └───────┬───────┘
-          ┌──────────────────┼──────────────────┐
-       (Gi1/1)            (Gi0/1)            (Gi1/0)
-          │                  │                  │
-         (e0)               (e0)               (e0)
-    ┌───────────┐      ┌───────────┐      ┌───────────┐
-    │   Linux   │      │    WEB    │      │    DB     │
-    │  Ubuntu   │      │  Server   │      │  Server   │
-    │ (Client)  │      │ (Apache)  │      │  (MySQL)  │
-    └───────────┘      └───────────┘      └───────────┘
-```
-
+![Topología de Red](https://github.com/labcruzmesson-cyber/Topologia-Fortigate/blob/main/IMAGES/Screenshot%202026-09-25%20173609.png?raw=true)
 ### 2.2 Requisitos de Capacidad y Asignación por Segmento
 
 Partiendo del bloque base privado `10.25.68.0/24`, se optimizó el direccionamiento mediante VLSM:
