@@ -1,7 +1,7 @@
 # Seguridad de Redes - FortiGate & Hardening L2
 
 Repositorio de documentación técnica y configuración del laboratorio práctico de seguridad perimetral, segmentación mediante VLANs/VLSM, hardening de Capa 2 y políticas UTM en FortiGate (FortiOS).
-
+# ENLACE HACIA VIDEO: https://youtu.be/ywWAUyPKpuk
 ---
 
 ## 📋 Información General
