@@ -15,34 +15,7 @@ Repositorio de documentación técnica y configuración del laboratorio práctic
 ---
 
 ## 🗺️ Topología de Red
-
-```text
-                     [ Internet / Net ]
-                             │
-                          (port1)
-                     ┌───────────────┐
-                     │   Fortinet    │
-                     │   FortiGate   │
-                     └───────────────┘
-                          (port2)
-                             │
-                          (Gi0/0)
-                     ┌───────────────┐
-                     │ Cisco Switch  │
-                     └───────┬───────┘
-          ┌──────────────────┼──────────────────┐
-       (Gi1/1)            (Gi0/1)            (Gi1/0)
-          │                  │                  │
-         (e0)               (e0)               (e0)
-    ┌───────────┐      ┌───────────┐      ┌───────────┐
-    │   Linux   │      │    WEB    │      │    DB     │
-    │  Ubuntu   │      │  Server   │      │  Server   │
-    │ (Client)  │      │ (Apache)  │      │  (MySQL)  │
-    └───────────┘      └───────────┘      └───────────┘
-```
-
----
-
+![Alt text](IMAGES/Screenshot 2026-09-25 173609.png)
 ## 1. Diseño de Direccionamiento IP y VLSM
 
 Para optimizar el direccionamiento y garantizar el aislamiento estructural entre clientes y servidores, se implementó un esquema con máscaras de longitud variable (**VLSM**) derivado del prefijo base privado `10.25.68.0/24`.
