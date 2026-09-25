@@ -15,7 +15,7 @@ Repositorio de documentación técnica y configuración del laboratorio práctic
 ---
 
 ## 🗺️ Topología de Red
-![Topología de Red](IMAGES/Screenshot 2026-09-25 173609.png)
+![Topología de Red](https://github.com/labcruzmesson-cyber/Topologia-Fortigate/blob/main/IMAGES/Screenshot%202026-09-25%20173609.png?raw=true)
 ## 1. Diseño de Direccionamiento IP y VLSM
 
 Para optimizar el direccionamiento y garantizar el aislamiento estructural entre clientes y servidores, se implementó un esquema con máscaras de longitud variable (**VLSM**) derivado del prefijo base privado `10.25.68.0/24`.
